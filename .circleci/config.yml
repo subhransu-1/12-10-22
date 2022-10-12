@@ -3,7 +3,7 @@ orbs:
   azure-cli: circleci/azure-cli@1.0.0
 jobs:
   login-to-azure:
-    executor: azure-cli/azure-docker
+    executor: azure-cli/default
     steps:
       - azure-cli/login-with-service-principal
       - run:
